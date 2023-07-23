@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/icon-c636a92a.png">
+    
+    <title>Facebook - log in and sign up</title>
+  <link rel="stylesheet" href="/assets/index-13952f12.css">
+</head>
+<body class="lg:bg-slate-200">
+    <div class="lg:mx-32 lg:flex lg:mt-40 items-center justify-center ">
+        <div class="hidden lg:flex flex-col w-9/12 ">
+            <img class="w-60" src="/assets/image-9531e960.svg" alt="">
+            <p class="text-3xl mx-7 ">Connect with friends and the world around you on Facebook.</p>
+            </div>
+        <div class="lg:flex lg:flex-col right lg:bg-white lg:p-1 rounded-lg lg:w-1/2 lg:mx-16">
+            <div class="flex bg-yellow-50 h-10 pt-3 px-2 lg:hidden">
+                <img src="/assets/new-68d6fecd.png" class="h-5">
+            <p>Get Facebook for Android and browse faster</p>
+            </div>
+            
+            <img src="/assets/image-9531e960.svg" class=" h-12 mx-auto my-3 lg:hidden">
+            <div class="flex flex-col px-5">
+                <input class="px-4 h-12 my-2 bg-gray-100 border border-1 border-gray-200 rounded-md font-semibold lg:bg-transparent lg:outline-blue-600" type="text" placeholder="Mobile number or email address" >
+                <input class="px-4 h-12 my-2 bg-gray-100 border border-1 border-gray-200 rounded-md font-semibold lg:bg-transparent lg:outline-blue-600" type="text" placeholder="Password">
+                <button class="bg-blue-600 px-4 h-12 my-2 text-white font-bold text-xl rounded-md hover:bg-blue-700">Log In</button>
+                <p class="text-center text-blue-500 cursor-pointer hover:underline my-2">Forgotten password?</p>
+                <hr class="hidden lg:flex my-2">
+            
+            <div class="flex py-6 lg:hidden">
+                <hr class="w-1/2 bg-slate-600">
+                <div class="text-gray-400 -my-4 px-2">or</div>
+                <hr class="w-1/2 bg-slate-600 ">
+            </div>
+            <button class=" px-2 h-10 my-2 w-fit mx-auto lg:bg-green-500 lg:text-white bg-white border border-1 border-gray-400 font-bold rounded-md hover:bg-green-700">Create new account</button>
+            <span class="hidden lg:flex absolute bottom-32 text-sm"><b class="hover:underline">Create a Page &nbsp;</b> for a celebrity, brand and business.</span>
+            <button class="lg:hidden mx-auto h-10 w-12 my-2   bg-white font-bold border border-1 border-gray-900 rounded-md" id="dmode" onclick="dmode()">Dark</button>
+        </div>  
+        </div>       
+
+    </div>
+</body>
+<script>
+    let x = 1
+    let txt = document.getElementById("dmode")
+    function dmode(){
+        if(x%2==1)
+        {
+            document.body.style.background="black"
+            txt.innerHTML="Light"
+        }
+        
+        else
+        {
+             document.body.style.background="white"
+             txt.innerHTML="Dark"
+        }
+        x++
+    }
+
+</script>
+</html>
